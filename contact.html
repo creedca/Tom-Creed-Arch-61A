@@ -1,68 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Contact Tom Creed Architect</title>
-    <link rel="stylesheet" type="text/css" href="contact.css">
-     <meta name="viewpoint" content= "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/f085c16952.js" crossorigin="anonymous"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="#default" class="logo">TomCreed<span>Architect</span></a>
-            <div class="header-center">
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects
-                       <i class="fas fa-caret-down"></i>
-                   </button>
-                   <div class="dropdown-content">
-                       <a href="#">Broadway, NYC</a>
-                       <a href="#">Tribeca, NYC</a>
-                       <a href="#">Butler's Court, Dublin</a>
-                       <a href="#">Hannover Quay, Dublin</a>
-                   </div>
-                </div> 
+    <nav class="navbar navbar-expand-md navbar-light" style ="background-color: silver;">
+        <a class="navbar-brand" href="GitHub/Code-First-Girls-Project/Home.html">TomCreedArchitect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="GitHub/Code-First-Girls-Project/Home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Projects</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="#">Broadway, NYC</a>
+                <a class="dropdown-item" href="#">Tribeca, NYC</a>
+                <a class="dropdown-item" href="#">Hannover Quay, Dublin</a>
+                <a class="dropdown-item" href="#">Butler's Court, Dublin</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-md-0">
+                <a href="https://www.linkedin.com/in/tom-creed-349636a/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/tom_creed_architects/"><i class="fab fa-instagram"></i></a>
+          </form>
+        </div>
+      </nav>
+
+
+    <div class="container">
+        <div class="contact-title">
+            <div class ="row justify-content-xl-center">
+                <div class="col-12">
+                    <h1>Get In Touch</h1>
+                </div>
             </div>
-            <div class="header-right">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            
+            <div class="row justify-content-xl-center">
+                <div class="col-12">
+                    <form class="contact-form" action="contact.php" method="post">
+                        <input type="text" class="contact-form-text" placeholder="Your name">
+                        <input type="text" class="contact-form-text" placeholder="Your email">
+                        <input type="text" class="contact-form-text" placeholder="Your phone number">
+                        <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                        <input type="submit" class="contact-form-btn" value="Send">
+                    </form>
+                </div>
+
+             </div>
             </div>
         </div>
-    </header>
-
-    <div class="contact-title">
-        <h1>Get In Touch</h1>
-
-        <form class="contact-form" action="contact.php" method="post">
-            <input type="text" class="contact-form-text" placeholder="Your name">
-            <input type="text" class="contact-form-text" placeholder="Your email">
-            <input type="text" class="contact-form-text" placeholder="Your phone number">
-            <textarea class="contact-form-text" placeholder="Your message"></textarea>
-            <input type="submit" class="contact-form-btn" value="Send">
-
-        </form>
     </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 
-<footer>
-    <div class="footer">
-
-        <div class="contact">
-            <span><i class="fas fa-envelope"></i> &nbsp; tomcreedarch@gmail</span>
-            <span><i class="fas fa-phone"></i> &nbsp; +353 (0) 86 244 0389</span>
-            <span><i class="fas fa-map-marker-alt"></i> &nbsp; 10 Toner House, Sidmonton Place, Bray, Co. Wicklow, Ireland</span>
-        </div>
-        
-        <div class="footer-bottom">
-            &copy; tomcreedarchitects.com | Designed by Aideen Duffy, Zoe Smith & Caoimhe Creed 
-        </div>
-
-    </div>
-
+<footer class="footer">
+    <p>
+        <a href="mailto:tomcreedarch@gmail.com">
+            <i class="fas fa-envelope"></i> Email tomcreedarch@gmail.com</a> or 
+        <a href="tel:00353862440389">
+            <i class="fas fa-phone"></i> Call +353 (0) 86 244 0389</a>
+    </p> 
+    <p>
+        &copy; tomcreedarchitects.com | Designed by Aideen Duffy, Zoe Smith & Caoimhe Creed
+    </p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
 </footer>
 </html>
