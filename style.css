@@ -1,0 +1,413 @@
+html, body {
+    margin: 0;
+    background: #121212;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+nav { 
+    display: flex;
+    justify-content: space-around;
+    min-height: 15vh;
+    align-items: center;
+    background-color: #121212;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+ }
+ 
+ .nav ul li {
+    display: inline-block;
+ }
+
+ 
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a { 
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.nav-links li:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    color: rgb(224, 224, 224);
+    letter-spacing: 0px;
+    /* font-size: 30px; */
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+/* mobile menu */
+
+.mobileMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobileMenu div {
+    width: 22px;
+    height: 2px;
+    background-color:  rgb(224, 224, 224);
+    margin: 5px;
+}
+
+/* home page */
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+
+#mapBroadway {
+    height: 100px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+
+.tomCreedText {
+    height: auto;  /* The height is 400 pixels */
+    width: 80%;
+    margin: 5% 5% 5% 5%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    /* align-items: center; */
+    color: rgb(224, 224, 224);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Project */
+
+#mark { 
+    color: #ed0000;
+    font-size: 20px;
+}
+
+
+/* Project - Gallery */
+
+.room-gallery {
+    width: 100%;
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileGallery {
+    display: none;
+}
+  
+.gallery-hightlight {
+    width: auto;
+    height: 450px;
+}
+  
+.room-preview {
+    display: flex;
+    border: 3px solid #121212;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-preview img {
+    flex-grow: 1;
+    height: 100px;
+    width:auto;
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+  
+img.room-active {
+    opacity: 1;
+}
+
+.projectText { 
+    display: flex;
+    /* height: 100vh; */
+    font-size: 16px;
+    margin: 50px 10px 100px 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(224, 224, 224);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.projectTitle {
+    margin: 15px;
+    margin-left: 90px;
+}
+
+.projectText :hover {
+    color: white;
+}
+
+#specs li{
+    list-style: none;
+}
+
+#specs {
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#abstract {
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+  
+span {
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:50%;
+    color:black;
+    font-family: Monserrat;
+    white-space:nowrap;
+    padding:20px;
+
+}
+  
+img {
+    width:800px;
+    height:450px;
+}
+  
+
+/* contactform */
+
+.form {
+    height: 500px;  /* The height is 400 pixels */
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center; 
+}
+
+::placeholder{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    width: 600px;
+    padding-top: 100px;
+    margin: auto;
+    width: 50%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #121212; 
+    border-radius: 0; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 20px; 
+    resize: vertical;
+} 
+  
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: grey;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+  
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: hotpink;
+    color: white;
+} 
+  
+/* Add a background color and some padding around the form */
+  
+.container {
+    margin-bottom: 30px;
+    padding: 50px;
+} 
+
+
+/* footer */
+
+.footer {
+    font-family: "montserrat",sans-serif;
+    font-weight: lighter;
+    padding: 2rem 0;
+    color: whitesmoke;
+    text-align: center;
+    background-color:#121212 ;
+  }
+  .footer p:last-child {
+    margin-bottom: 0;
+  }
+
+
+section {
+    /* height: 100vh; */
+    /* display: flex; */
+    background:#121212;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* headers/ fonts */
+
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom:0;
+    font-style: none
+    color: rgb(224, 224, 224);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    color: rgb(224, 224, 224);;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large; 
+    font-weight: lighter;
+    font-style: none
+}
+
+h2 {
+    color: rgb(224, 224, 224);;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large; 
+    font-weight: lighter;
+}
+
+.light {
+    color: #8f8f8f;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: x-large; 
+    font-weight: lighter;
+    padding: 2px;
+}
+
+
+h5 {
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom:0;
+    color: rgb(224, 224, 224);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* mobile */
+
+
+@media screen and (max-width:800px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 85vh;
+        top: 15vh;
+        background-color: #121212;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .mobileMenu {
+        display: block;
+    }
+
+    .container {
+        width: 480px;
+    }
+
+    .room-gallery {
+        display: none;
+    }
+    
+    .mobileGallery {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobileGallery img { 
+        width: 80%; 
+        height: auto;
+        padding: 10px;
+    }
+
+    header div {
+        margin: 0;
+    }
+
+    header {
+        padding: 0;
+
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
